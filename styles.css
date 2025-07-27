@@ -3,18 +3,44 @@ body{
     flex-direction: column;
 }
 
+header{
+    background-color:#c44747;
+    color: #fdcccc;
+}
+
+.logo{
+    transform: rotate(-30deg);
+    display: inline-block;
+}
+
 main{
     display: flex;
     flex-direction: row;
     flex: auto;
+    color: rgb(155, 56, 56);
+    background-color: beige;
 }
 
 article{
     flex: 2;
     overflow-y: auto;
+    color: #aa3e3e;
 }
 
 aside{
     flex: 1;
     overflow-y: auto;
+    background-color: #c44747;
+}
+
+.placeholder{
+    color: #ffc6d9;
+    background-color: #a34141;
+    border-radius: 30px;
+    font-style: italic;
+}
+
+footer{
+    background-color:#c44747;
+    color: #e2b6b6;
 }
