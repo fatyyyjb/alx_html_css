@@ -192,11 +192,27 @@ a{
 
 
 .faq{
-    
+    text-align: center;
+    font-weight: 200;
+    font-size: 50px;
+    color: #071629;
 }
 .how1{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    padding: 50px;
+}
+.how2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+.ipsum{
+    width: 450px;
+    color: grey;
+}
+.colorii{
+    color: #071629;
 }
