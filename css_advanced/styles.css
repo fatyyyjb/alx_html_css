@@ -75,6 +75,7 @@ a{
     align-items: center;
     display: flex;
     margin-top: 90px;
+    margin-bottom: 20px;
 }
 .prospics{
     border-radius: 100px;
@@ -94,4 +95,60 @@ a{
 }
 .quots{
     margin: 0px;
+}
+
+
+
+.most-popular{
+    text-align: center;
+}
+.popular{
+    color: #C271FF;
+}
+.rating-sect{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    padding: 20px 0px;
+    justify-content: space-around;
+}
+.video-list{
+    position: relative;
+    padding: 20px;
+    width: 260px;
+    border-radius:12px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0, 1);
+}
+.play{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    width: 20%;
+    z-index: 2;
+}
+
+.Phillip{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    color: #C271FF;
+}
+.Phillip-pic{
+    width: 50px;
+    height: 50px;
+}
+.rating{
+    display: flex;
+    justify-content: start;
+    gap: 90px;
+    color: #C271Ff;
+}
+.rating-pic{
+    margin-top: 20px;
+}
+.dia{
+    color: #000;
+}
+.lorem1{
+    color: gray;
 }
