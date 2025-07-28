@@ -82,6 +82,7 @@ a{
 }
 
 
+
 .backgr-color{
     background-color: #C271FF;
     display: flex;
@@ -96,6 +97,7 @@ a{
 .quots{
     margin: 0px;
 }
+
 
 
 
@@ -151,4 +153,50 @@ a{
 }
 .lorem1{
     color: gray;
+}
+
+
+
+.freeee{
+    color: #C271Ff;
+}
+.membership{
+    text-align: center;
+
+}
+.freemember{
+    background-color: #071629;
+    padding: 30px;
+    padding-bottom: 50px;
+    color: #ffffff;
+}
+.Loremm{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 90px;
+}
+.smiley{
+    text-align: center;
+}
+.forfree{
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 20px;
+    color: #fff;
+    background-color:#C271Ff ;
+}
+
+
+
+
+.faq{
+    
+}
+.how1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
