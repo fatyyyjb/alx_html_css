@@ -216,3 +216,22 @@ a{
 .colorii{
     color: #071629;
 }
+
+
+
+.footerbackg{
+    background-color: #071629;
+}
+.footerimgs{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+.socialimgs{
+    gap: 30px;
+    display: flex;
+}
+.last{
+    text-align: center;
+    padding: 50px;
+}
