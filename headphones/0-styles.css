@@ -1,0 +1,234 @@
+/* RESET STYLING */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* VARIABLES */
+:root {
+  --color-primary: #ff6565;
+  --color-white: #ffffff;
+  --color-bg-dark: #1a1a1a;
+  --color-oxford-blue: #071629;
+  --font-main: "Source Sans Pro", sans-serif;
+  --max-width: 1000px;
+  --x-padding: 1rem;
+  --btn-opacity: 0.9;
+}
+
+/* COMMON */
+html,
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-white);
+  color: var(--color-oxford-blue);
+  line-height: 1.5;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+a:hover,
+a:active {
+  color: var(--color-primary);
+}
+
+/* SHARED BACKGROUND FOR HEADER + HERO */
+.header {
+  background: url("imgs/headphones_hero_1.jpg") no-repeat center
+    center/cover;
+  color: var(--color-white);
+}
+
+/* NAVIGATION */
+.container {
+  padding: 1.5rem var(--x-padding);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+#navigation.container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 15rem;
+}
+
+/* Logo */
+.logo {
+  width: auto;
+  height: 2rem;
+  margin: 0 auto;
+}
+
+/* Nav links */
+.nav {
+  position: absolute;
+  top: 60px;
+  left: 10%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  padding: 1rem;
+  animation: slideDown 0.3s ease forwards;
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav__item {
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  background-color: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+.menu-toggle span:nth-child(1) {
+  width: 18px;
+}
+.menu-toggle span:nth-child(2) {
+  width: 13px;
+}
+.menu-toggle span:nth-child(3) {
+  width: 20px;
+}
+
+#nav-toggle:checked ~ .nav {
+  display: flex;
+}
+
+/* Animation for hamburger to X */
+#nav-toggle:checked ~ .menu-toggle span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  width: 20px;
+}
+
+#nav-toggle:checked ~ .menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+#nav-toggle:checked ~ .menu-toggle span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+  width: 20px;
+}
+
+/* LARGE SCREENS */
+@media (min-width: 481px) {
+  #navigation.container {
+    flex-direction: column;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .nav {
+    display: block;
+    position: static;
+  }
+
+  .nav ul {
+    flex-direction: row;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #navigation.container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 2.5rem 0 4rem;
+}
+
+.hero__content {
+  max-width: 680px;
+}
+
+.hero__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hero__subtitle {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  padding: 1rem 2rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 999px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-transform: uppercase;
+  cursor: pointer;
+  width: max-content;
+  transition: opacity 0.3s ease;
+}
+
+.hero__button {
+  margin-bottom: 4rem;
+}
+
+.button:hover,
+.button:active {
+  opacity: var(--btn-opacity);
+}
+
+.hero__description {
+  font-size: 1rem;
+  line-height: 1.625;
+}
