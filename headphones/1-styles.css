@@ -49,7 +49,7 @@ a:active {
 /*************************************************************/
 /*==========  SHARED BACKGROUND FOR HEADER + HERO ========== */
 .header {
-  background: url("./images/headphones_hero_1.jpg") no-repeat center
+  background: url("imgs/headphones_hero_1.jpg") no-repeat center
     center/cover;
   color: var(--color-white);
 }
